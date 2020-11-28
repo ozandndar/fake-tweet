@@ -1,13 +1,108 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #15202b;
+  color: white;
+  max-width: 900px;
+  margin: 30px auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p {
+  margin: 0;
+}
+
+.single-tweet {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  border: 1px solid #38444d;
+  padding: 10px 15px;
+  max-width: 100%;
+}
+
+.tweet-container {
+  width: 600px;
+  margin: 40px auto;
+}
+
+.tweet-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.tweet-owner-section {
+  display: flex;
+}
+
+.tweet-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweet-owner-image img {
+  max-height: 49px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.tweet-owner-image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 10px;
+}
+
+.tweet-owner-name {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.tweet-owner-username {
+  margin-right: 5px;
+  font-size: 15px;
+  color: rgb(136, 153, 166);
+}
+
+.tweet-time {
+  margin-right: 5px;
+  font-size: 15px;
+  color: rgb(136, 153, 166);
+}
+
+.tweet-time:before {
+  content: ".";
+  margin-right: 5px;
+  position: relative;
+  transform: tra;
+  display: inline-block;
+  transform: translateY(-3px);
+}
+
+.tweet-button {
+  color: rgb(136, 153, 166);
+  font-size: 13px;
+}
+
+.tweet-button svg {
+  width: 14px;
+  fill: #8899a6;
+  margin-right: 3px;
+  display: inline-block;
+  transform: translateY(-1px);
+}
+
+.tweet-content p {
+  margin-bottom: 7px;
+}
+
+img.cropped-image {
+  width: 600.9px;
+  object-fit: none;
+  object-position: 0 0;
+  opacity: 0;
+}
+
+.input-grop {
+  margin-bottom: 20px;
 }
